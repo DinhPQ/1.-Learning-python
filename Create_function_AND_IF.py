@@ -24,4 +24,4 @@ def mean(number):
         the_mean = sum(number) / len(number)
     return the_mean
 print(mean(student_grades))
-    
+
