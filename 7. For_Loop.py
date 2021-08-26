@@ -42,3 +42,13 @@ for key, value in phone_numbers.items():
 phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
 for n in phone_numbers.items():
     print("%s : %s" %(key, value))
+
+#Print the string value with the initial 
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+for n in phone_numbers.values():
+    print("00%s" %n[1:])
+
+#Same as previous
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+for value in phone_numbers.values():
+    print(value.replace("+", "00"))
