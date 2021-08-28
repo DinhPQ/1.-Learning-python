@@ -35,3 +35,12 @@ with open("sample.txt", "a+") as myfile:
     myfile.seek(0)
     content = myfile.read()
 print(content)
+
+with open("replace_with_text.txt", "a+") as myfile:
+    myfile.seek(0)
+    content = myfile.read()
+    myfile.seek(0)
+    myfile.write("\n")
+    myfile.write(content)
+    myfile.write("\n")
+    myfile.write(content)
